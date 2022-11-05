@@ -81,6 +81,12 @@ modalWork.forEach(item=>{
 
 
 
+let menuBtn = document.querySelector('#nav-icon1');
+let menuNav = document.querySelector('.navMenu')
+menuBtn.onclick = function(){
+    menuBtn.classList.toggle('open');
+    menuNav.classList.toggle('showMenu');
+}
 
 
 

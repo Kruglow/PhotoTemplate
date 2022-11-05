@@ -45,6 +45,16 @@ header .container {
   justify-content: space-between;
   align-items: center;
 }
+header .container ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-left: 300px;
+}
+header .container ul li {
+  margin-left: 25px;
+}
 header .container a {
   color: var(--color);
   text-decoration: none;
@@ -598,3 +608,124 @@ footer .container ul li {
 ::placeholder {
   color: var(--color-second);
 }
+
+#nav-icon1 {
+  display: none;
+  width: 30px;
+  position: relative;
+  transform: rotate(0deg);
+  transition: 0.5s ease-in-out;
+  height: 25px;
+  cursor: pointer;
+}
+#nav-icon1 span {
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: #d3531a;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: 0.25s ease-in-out;
+}
+#nav-icon1 span:nth-child(1) {
+  top: 0px;
+}
+#nav-icon1 span:nth-child(2) {
+  top: 9px;
+}
+#nav-icon1 span:nth-child(3) {
+  top: 18px;
+}
+
+#nav-icon1.open span:nth-child(1) {
+  top: 9px;
+  transform: rotate(135deg);
+}
+
+#nav-icon1.open span:nth-child(2) {
+  opacity: 0;
+  left: -60px;
+}
+
+#nav-icon1.open span:nth-child(3) {
+  top: 9px;
+  transform: rotate(-135deg);
+}
+
+.showMenu {
+  display: flex !important;
+  top: 80px !important;
+  /* Large Devices, Wide Screens */
+}
+
+@media only screen and (max-width: 1200px) {
+  header .container {
+    justify-content: space-around;
+  }
+  header .container ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 100px;
+  }
+  header .container ul li {
+    margin-left: 25px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  header .container {
+    position: relative;
+    flex-flow: row-reverse;
+    width: 100%;
+    margin-left: 0;
+    justify-content: space-around;
+  }
+  header .container .theme {
+    left: 50px;
+    position: absolute;
+  }
+  header .container ul {
+    transition: 0.6s ease-in-out;
+    position: absolute;
+    top: -100vh;
+    left: 0;
+    background: #000;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    flex-flow: column;
+    margin: 0;
+    padding: 0;
+  }
+  header .container ul li {
+    margin: 0;
+    padding: 0;
+    margin-top: 50px;
+    width: 80%;
+    padding: 20px 0;
+    text-align: center;
+  }
+  header .container ul li:hover {
+    background: #ccc;
+    cursor: pointer;
+  }
+  header .container ul li:hover a {
+    color: #000;
+  }
+  header .container ul li:last-child:hover {
+    width: auto;
+    background: none;
+  }
+  #nav-icon1 {
+    display: block;
+    right: 50px;
+    position: absolute;
+  }
+}
+/* Small Devices, Tablets */
+/* Extra Small Devices, Phones */
+/* Custom, iPhone Retina */
