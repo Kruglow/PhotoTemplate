@@ -34,6 +34,16 @@ body {
   --color-headles: #686565;
 }
 
+.progress-bar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 4px;
+  width: 0%;
+  background: red;
+  z-index: 999;
+}
+
 header {
   background: var(--bg);
   height: 90px;
