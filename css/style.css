@@ -962,9 +962,9 @@ footer .container ul li {
     margin-left: 16px;
   }
   .work .modalcontent {
-    margin-top: 20px;
+    margin-top: 120px;
     flex-flow: column;
-    width: 65%;
+    width: 80%;
     padding: 50px 30px 0 30px;
   }
   .work .modalcontent img {
@@ -983,8 +983,8 @@ footer .container ul li {
     font-size: 16px;
   }
   .work .modalcontent .close {
-    top: -15px;
-    right: -50px;
+    top: -20px;
+    right: -10px;
     font-size: 30px;
   }
 }
