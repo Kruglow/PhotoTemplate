@@ -578,6 +578,7 @@ footer .container ul li {
   color: var(--color);
   padding: 5px 10px;
   z-index: 1;
+  border: 1px solid #000;
 }
 .Subnews form button:hover {
   cursor: pointer;
@@ -720,6 +721,204 @@ footer .container ul li {
     width: auto;
     background: none;
   }
+  .work {
+    text-align: center;
+    padding-bottom: 50px;
+  }
+  .work h2 {
+    font-size: 40px;
+    padding-top: 150px;
+  }
+  .work p {
+    font-size: 23px;
+    margin-top: 10px;
+    margin-bottom: 45px;
+  }
+  .work .container {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+  }
+  .work .container article {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  .work .container article img {
+    width: 100%;
+  }
+  .work .container article .articleDescr {
+    bottom: 45px;
+    left: 20px;
+    width: 90%;
+    text-align: left;
+  }
+  .work .container article .articleDescr p {
+    margin-bottom: 30px;
+    font-size: 14px;
+  }
+  .work .container article .articleDescr a {
+    padding: 10px 14px 10px 45px;
+    background: #fff;
+    border-radius: 14px;
+    position: relative;
+    text-decoration: none;
+    color: #000;
+  }
+  .work .container article .articleDescr a::before {
+    content: "";
+    background: #000;
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    left: calc(50% - 16px - 51.5px);
+    top: 5px;
+    border-radius: 14px;
+  }
+  .work .modalcontent {
+    flex-flow: column;
+    width: 60%;
+    padding-top: 50px;
+  }
+  .work .modalcontent img {
+    width: 80%;
+  }
+  .work .modalcontent .modaltext {
+    max-width: 550px;
+    margin-left: 0px;
+    text-align: center;
+  }
+  .work .modalcontent .modaltext p {
+    font-size: 14px;
+  }
+  .work .modalcontent .modaltext h3 {
+    font-size: 20px;
+  }
+  .work .modalcontent .close {
+    top: -35px;
+    right: -70px;
+    font-size: 30px;
+  }
+  .gear {
+    flex-flow: column;
+    background: var(--bg);
+    color: var(--color);
+  }
+  .gear article {
+    width: 100%;
+    justify-content: flex-end;
+  }
+  .gear article .wrapper {
+    width: 80%;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    margin-left: 50px;
+  }
+  .gear article:nth-of-type(2) {
+    background: url("../img/IMAGE6.png") center/cover;
+    height: 250px;
+  }
+  .client .container h3 {
+    font-size: 32px;
+  }
+  .client .container p {
+    margin-bottom: 20px;
+  }
+  .client .container ul {
+    padding: 0;
+    flex-flow: wrap;
+    margin-bottom: 0px;
+  }
+  .client .container ul li {
+    margin-bottom: 50px;
+  }
+  .feedback .wrapper {
+    width: 100%;
+  }
+  .feedback .wrapper h2 {
+    font-size: 28px;
+    padding-top: 50px;
+  }
+  .feedback .wrapper h4 {
+    font-size: 18px;
+  }
+  footer .container {
+    display: flex;
+    flex-direction: column;
+  }
+  footer .container .logo_wrap {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  footer .container .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer .container p {
+    color: var(--color-headles);
+    font-size: 13px;
+  }
+  footer .container .ul_wrap {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 40px;
+  }
+  footer .container ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 0px;
+    margin-bottom: 0px;
+  }
+  footer .container ul h5 {
+    margin: 0;
+    padding: 0;
+    color: var(--color-headles);
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+  footer .container ul a {
+    color: var(--color);
+    text-decoration: none;
+    line-height: 20px;
+    font-size: 14px;
+  }
+  footer .container ul li {
+    margin-bottom: 10px;
+  }
+  .Subnews {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+  }
+  .copyright {
+    display: flex;
+    flex-flow: column-reverse;
+    text-align: center;
+    align-items: center;
+    margin-top: 40px;
+  }
+  .copyright ul {
+    list-style: none;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    justify-content: space-around;
+  }
+  .copyright ul li {
+    margin-left: 0;
+    padding: 0;
+  }
   #nav-icon1 {
     display: block;
     right: 50px;
@@ -727,5 +926,279 @@ footer .container ul li {
   }
 }
 /* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  header .container {
+    justify-content: space-around;
+  }
+  header .container ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  header .container ul li {
+    margin-left: 0px;
+  }
+  .firstSect .container h4 {
+    font-size: 12px;
+  }
+  .firstSect .container h1 {
+    font-size: 34px;
+    margin-top: 0;
+    margin-bottom: 16px;
+  }
+  .firstSect .container p {
+    width: 80%;
+    text-align: center;
+    font-size: 14px;
+    color: var(--color-gray);
+    margin-bottom: 40px;
+  }
+  .firstSect ul {
+    justify-content: center;
+  }
+  .firstSect ul li {
+    margin-right: 20px;
+    margin-left: 16px;
+  }
+  .work .modalcontent {
+    margin-top: 20px;
+    flex-flow: column;
+    width: 65%;
+    padding: 50px 30px 0 30px;
+  }
+  .work .modalcontent img {
+    width: 90%;
+  }
+  .work .modalcontent .modaltext {
+    width: 100%;
+    margin-left: 0px;
+    text-align: center;
+  }
+  .work .modalcontent .modaltext p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .work .modalcontent .modaltext h3 {
+    font-size: 16px;
+  }
+  .work .modalcontent .close {
+    top: -15px;
+    right: -50px;
+    font-size: 30px;
+  }
+}
 /* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  header .container {
+    justify-content: space-around;
+  }
+  header .container ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  header .container ul li {
+    margin-left: 0px;
+  }
+  header .container .theme {
+    left: 15px;
+  }
+  .firstSect .container h4 {
+    font-size: 12px;
+  }
+  .firstSect .container h1 {
+    font-size: 34px;
+    margin-top: 0;
+    margin-bottom: 16px;
+  }
+  .firstSect .container p {
+    width: 90%;
+    text-align: center;
+    font-size: 12px;
+    color: var(--color-gray);
+    margin-bottom: 10px;
+  }
+  .firstSect ul {
+    justify-content: center;
+  }
+  .firstSect ul li {
+    margin-right: 20px;
+    margin-left: 0px;
+  }
+  .work h2 {
+    padding-top: 25px;
+    font-size: 18px;
+  }
+  .work p {
+    font-size: 14px;
+  }
+  .work .modaloverlay {
+    padding: 0;
+  }
+  .work .modalcontent {
+    margin-top: 30px;
+    margin-left: 15px;
+    padding: 15px;
+    width: 80%;
+  }
+  .work .modalcontent img {
+    padding-top: 20px;
+    width: 90%;
+  }
+  .work .modalcontent .close {
+    top: 0px;
+    right: 10px;
+  }
+  .workDetail .wrapper {
+    margin-left: 20px;
+    align-items: center;
+  }
+  .workDetail .wrapper h5 {
+    margin-left: 20px;
+    margin-top: 80px;
+    width: 100%;
+  }
+  .workDetail .wrapper p {
+    margin-bottom: 20px;
+    margin-left: 20px;
+    width: 100%;
+  }
+  .workDetail .wrapper ul {
+    margin-right: 0px;
+  }
+  .workDetail .wrapper ul li {
+    margin-bottom: 10px;
+    margin-right: 0;
+    margin-left: 10px;
+  }
+  .gear article .wrapper p {
+    font-size: 12px;
+  }
+  .gear article .wrapper h5 {
+    font-size: 10px;
+  }
+  .gear article .wrapper h3 {
+    font-size: 16px;
+    letter-spacing: 3px;
+  }
+  .feedback .wrapper {
+    width: 100%;
+  }
+  .feedback .wrapper h2 {
+    font-size: 18px;
+    padding-top: 50px;
+  }
+  .feedback .wrapper h4 {
+    font-size: 14px;
+  }
+  footer .container {
+    display: flex;
+    flex-direction: column;
+  }
+  footer .container .logo_wrap {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  footer .container .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer .container p {
+    color: var(--color-headles);
+    font-size: 13px;
+  }
+  footer .container .ul_wrap {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 40px;
+  }
+  footer .container ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 0px;
+    margin-bottom: 0px;
+  }
+  footer .container ul h5 {
+    margin: 0;
+    padding: 0;
+    color: var(--color-headles);
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+  footer .container ul a {
+    color: var(--color);
+    text-decoration: none;
+    line-height: 20px;
+    font-size: 14px;
+  }
+  footer .container ul li {
+    margin-bottom: 10px;
+  }
+  .Subnews {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+  }
+  .Subnews form input {
+    width: 300px;
+  }
+  .Subnews form button {
+    right: 15px;
+  }
+  .copyright {
+    display: flex;
+    flex-flow: column-reverse;
+    text-align: center;
+    align-items: center;
+    margin-top: 40px;
+  }
+  .copyright ul {
+    list-style: none;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    justify-content: space-around;
+  }
+  .copyright ul li {
+    margin-left: 0;
+    padding: 0;
+  }
+}
 /* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+  .Subnews {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+  }
+  .Subnews form input {
+    width: 250px;
+  }
+  footer .container .ul_wrap {
+    flex-direction: column;
+    text-align: center;
+  }
+  .gear article ul {
+    margin-right: 25px;
+  }
+  .gear article ul li {
+    margin-left: 15px;
+  }
+  .gear article ul li img {
+    margin-right: 4px;
+  }
+}
