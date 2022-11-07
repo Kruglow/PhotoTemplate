@@ -1027,29 +1027,31 @@ footer .container ul li {
     margin-right: 20px;
     margin-left: 0px;
   }
-  .work h2 {
-    padding-top: 25px;
-    font-size: 18px;
-  }
-  .work p {
-    font-size: 14px;
-  }
-  .work .modaloverlay {
-    padding: 0;
-  }
   .work .modalcontent {
-    margin-top: 30px;
-    margin-left: 15px;
-    padding: 15px;
+    margin-top: 100px;
+    flex-flow: column;
     width: 80%;
+    padding: 50px 30px 0 30px;
   }
   .work .modalcontent img {
-    padding-top: 20px;
     width: 90%;
   }
+  .work .modalcontent .modaltext {
+    width: 100%;
+    margin-left: 0px;
+    text-align: center;
+  }
+  .work .modalcontent .modaltext p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .work .modalcontent .modaltext h3 {
+    font-size: 16px;
+  }
   .work .modalcontent .close {
-    top: 0px;
+    top: -20px;
     right: 10px;
+    font-size: 30px;
   }
   .workDetail .wrapper {
     margin-left: 20px;
@@ -1082,6 +1084,15 @@ footer .container ul li {
   .gear article .wrapper h3 {
     font-size: 16px;
     letter-spacing: 3px;
+  }
+  .gear article ul {
+    margin-right: 25px;
+  }
+  .gear article ul li {
+    margin-left: 15px;
+  }
+  .gear article ul li img {
+    margin-right: 4px;
   }
   .feedback .wrapper {
     width: 100%;
